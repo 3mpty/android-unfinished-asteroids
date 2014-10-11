@@ -24,7 +24,6 @@
             android:id="@+id/button_up"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="U"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
@@ -32,7 +31,6 @@
             android:id="@+id/button_down"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:text="D"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
@@ -40,7 +38,6 @@
             android:id="@+id/button_left"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:text="L"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
@@ -48,7 +45,6 @@
             android:id="@+id/button_right"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:text="R"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
@@ -66,7 +62,6 @@
 
         <Button
             android:id="@+id/button_shoot"
-            android:text="Shoot"
             android:layout_centerInParent="true"
             android:layout_width="100dp"
             android:layout_height="100dp" />
