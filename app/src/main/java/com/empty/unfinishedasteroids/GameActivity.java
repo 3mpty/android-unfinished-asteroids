@@ -18,7 +18,7 @@ import java.security.Key;
 public class GameActivity extends Activity implements View.OnTouchListener {
 
     private WebView gameView;
-    private Button left, right, up, down, shoot;
+    private Button left, right, up, down, shoot, restart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +45,20 @@ public class GameActivity extends Activity implements View.OnTouchListener {
         up = (Button) findViewById(R.id.button_up);
         down = (Button) findViewById(R.id.button_down);
         shoot = (Button) findViewById(R.id.button_shoot);
+        restart = (Button) findViewById(R.id.button_restart);
 
         left.setOnTouchListener(this);
         right.setOnTouchListener(this);
         up.setOnTouchListener(this);
         down.setOnTouchListener(this);
         shoot.setOnTouchListener(this);
+
+        restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gameView.reload();
+            }
+        });
     }
 
     @Override
